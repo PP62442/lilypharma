@@ -364,3 +364,24 @@ body {
     bottom: 1rem;
     right: 1rem;
 }
+
+.fotter-website {
+    background-color: var(--color-primary);
+    height: 30vh;
+}
+
+.footer-grid {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.information .logo {
+    font-size: 2rem;
+    color: white;
+}
+
+.information .location {
+    margin-top: 2rem;
+    color: white;
+}
