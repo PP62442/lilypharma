@@ -271,8 +271,10 @@ body {
 }
 
 .post-by-left {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    display: flex;
+    justify-content:space-between;
 }
 
 .post-time {
@@ -370,7 +372,7 @@ body {
     position:fixed; */
     bottom: 0;
     background-color: var(--color-primary);
-    height: 30vh;
+    /* height: 30vh; */
 }
 
 .footer-grid {

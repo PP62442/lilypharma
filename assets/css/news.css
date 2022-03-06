@@ -1,0 +1,17 @@
+.large-news {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.information-left {
+    width: 60%;
+}
+
+.information-left img {
+    object-fit: cover;
+    height: 60vh;
+}
+
+.information-rigth {
+    width: 40%;
+}
