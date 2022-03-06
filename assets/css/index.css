@@ -366,6 +366,9 @@ body {
 }
 
 .fotter-website {
+    /* width: 100%;
+    position:fixed; */
+    bottom: 0;
     background-color: var(--color-primary);
     height: 30vh;
 }
@@ -376,12 +379,14 @@ body {
     grid-template-columns: 1fr 1fr;
 }
 
-.information .logo {
+.information .logo,
+.contact .topic {
     font-size: 2rem;
     color: white;
 }
 
-.information .location {
+.information .location,
+.contact .des {
     margin-top: 2rem;
     color: white;
 }
