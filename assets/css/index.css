@@ -385,3 +385,16 @@ body {
     margin-top: 2rem;
     color: white;
 }
+
+.social {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.facebook,
+.instagram,
+.twitter,
+.youtube {
+    color: white;
+    font-size: 3rem;
+}
