@@ -39,11 +39,11 @@
     <link rel="stylesheet"
         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link rel="stylesheet" href="path/to/line-awesome/css/line-awesome-font-awesome.min.css">
-
+    <script src="./js/loadData.js"></script>
 
 </head>
 
-<body>
+<body onload="loadNews()">
 
     <section data-bs-version="5.1" class="menu cid-s48OLK6784" once="menu" id="menu1-h">
 
@@ -215,7 +215,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="rigth"></div>
+                <div class="rigth">
+                    <header>
+                        <div>News</div>
+                        <div>View all <i class="las la-arrow-right"></i></div>
+                    </header>
+                    <div id="newsItems"></div>
+                </div>
             </div>
         </div>
     </section>

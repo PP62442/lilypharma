@@ -311,3 +311,43 @@ body {
     color: var(--color-primary-dark-dark);
     transition: 0.3s all ease-in-out;
 }
+
+.rigth {
+    padding: 1rem 1rem 1rem 4rem;
+}
+
+.rigth header {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    text-align: right;
+    color: var(--color-text);
+    font-size: 1.25rem;
+}
+
+.rigth header div:nth-child(1) {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#newsItems {
+    margin-top: 1rem;
+    height: 60vh;
+    overflow-y: scroll;
+}
+
+.newsItem {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 1rem;
+}
+
+.img-news-rigth {
+    width: 15rem;
+    height: 10rem;
+    border-radius: 0.5rem
+}
+
+.newsItem .itemInfo {
+    padding: 1rem;
+}
