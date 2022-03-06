@@ -31,6 +31,8 @@ body {
 
 
 .product-items {
+    display: flex;
+    align-items: center;
     white-space: nowrap;
     width: 60%;
     margin-left: 2rem;
@@ -58,8 +60,8 @@ body {
 
 .product-item {
     display: inline-block;
-    width: 30rem;
-    min-height: 32rem;
+    width: 20rem;
+    height: 25em;
     background-color: rgba(255, 255, 255, 1);
     border-radius: 1rem;
     border-top: 2px solid white;
@@ -86,7 +88,7 @@ body {
 .product-item .header {
     font-weight: bold;
     text-align: end;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: var(--color-primary);
 }
 
@@ -206,8 +208,8 @@ body {
 }
 
 .arrow-blog {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -227,9 +229,85 @@ body {
 
 .arrow-left {
     /* background: linear-gradient(90deg, var(--color-primary-dark-dark), var(--color-primary)); */
-    background-color:white;
+    background-color: white;
     color: var(--color-primary-dark-dark);
-
 }
 
+.news {
+    height: 100vh;
+    background-color: white;
+}
 
+.news_column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.news_column .left {
+    padding: 1rem;
+}
+
+.large-item img {
+    border-radius: 0.5rem;
+}
+
+/* post by */
+.postby {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 1rem;
+}
+
+.postby span {
+    color: var(--color-text-gray);
+    margin-left: 1rem;
+}
+
+.postby img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.post-by-left {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.post-time {
+    display: flex;
+    align-items: flex-end;
+}
+
+.post-time .la-calendar {
+    font-size: 2rem;
+}
+
+.post-date {
+    margin-left: 0.5rem;
+    color: var(--color-text-gray);
+}
+
+.large-item .topic {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.large-item .content {
+    margin-top: 2rem;
+}
+
+.large-item .read-more {
+    cursor: pointer;
+    margin-top: 2rem;
+    text-align: right;
+    color: var(--color-primary);
+    transition: 0.3s all ease-in-out;
+}
+
+.large-item .read-more:hover {
+    color: var(--color-primary-dark-dark);
+    transition: 0.3s all ease-in-out;
+}
