@@ -299,7 +299,8 @@ body {
     margin-top: 2rem;
 }
 
-.large-item .read-more {
+.large-item .read-more,
+.btn-read-more {
     cursor: pointer;
     margin-top: 2rem;
     text-align: right;
@@ -307,7 +308,8 @@ body {
     transition: 0.3s all ease-in-out;
 }
 
-.large-item .read-more:hover {
+.large-item .read-more:hover,
+.btn-read-more:hover {
     color: var(--color-primary-dark-dark);
     transition: 0.3s all ease-in-out;
 }
@@ -349,5 +351,16 @@ body {
 }
 
 .newsItem .itemInfo {
+    position: relative;
     padding: 1rem;
+}
+
+.newsItem .itemInfo .title {
+    font-weight: 600;
+}
+
+.newsItem .itemInfo .btn-read-more {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
 }

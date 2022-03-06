@@ -32,7 +32,11 @@ function loadNews() {
         let title = document.createElement('div')
         title.className = "title"
         title.innerHTML = `${element.title}`
+        let btnRead = document.createElement('div')
+        btnRead.className = "btn-read-more"
+        btnRead.innerHTML = 'Read More <i class="las la-arrow-right"></i>'
         infoItem.appendChild(title)
+        infoItem.appendChild(btnRead)
         diveItem.appendChild(img)
         diveItem.appendChild(infoItem)
         newItems.appendChild(diveItem)
