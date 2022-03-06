@@ -1,0 +1,25 @@
+* {
+    font-family: 'Prompt', sans-serif;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    font-family: 'Prompt', sans-serif;
+}
+
+/* navbar */
+.nav-link {
+    font-family: 'Prompt', sans-serif !important;
+}
+
+:root {
+    --color-primary: #2ca58d;
+    --color-primary-dark: #1a927a;
+    --color-primary-dark-dark: #116454;
+    --color-text: #111828;
+    --color-text-gray: #919191;
+    --color-backgroud-green: #f1faf8;
+}
