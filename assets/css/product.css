@@ -1,0 +1,7 @@
+.section-pre-product {
+    background-color: var(--color-backgroud-green);
+}
+
+.cover {
+    background-image: url("../images/banner.jpg");
+}
