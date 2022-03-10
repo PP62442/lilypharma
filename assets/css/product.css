@@ -7,7 +7,7 @@
 }
 
 .product-blog {
-    height: 100vh;
+    height: 100%;
 }
 
 .cover-product {
@@ -27,6 +27,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
+    margin-bottom:10vh;
 }
 
 .productItem {
@@ -51,4 +52,15 @@
     background-color: var(--color-primary);
     color: white;
     padding: 0.5rem 2rem;
+    z-index: 1;
+}
+
+.productItemName {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.productItemDes {
+    color: var(--color-text-gray);
+    font-size: 0.8rem;
 }
