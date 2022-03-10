@@ -9,6 +9,13 @@ class News {
     }
 }
 
+class product {
+    constructor(id, img, type, name, des, price, bestSeller) {
+        this.id = id,
+            this.img = img, this.type = type, this.name = name, this.des = des, this.price = price, this.bestSeller = bestSeller
+    }
+}
+
 const newsList = [
     new News(0001, 'https://cloudfront-us-east-2.images.arcpublishing.com/reuters/KOL6YFOCSZK2ZENHC7TIWJXO7Y.jpg', 'COVID in Europe: An updated list of travel restrictions for every European country', 'des1', 'panuwat', '2022/02/02'),
     new News(0002, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuQOF3qPyiRzz7hQFLI5G_MGuBigt5jF84LewIKOcOiGVQUGgcDWRgWlmb0H-G7fh2rQQ&usqp=CAU', 'As BA.2 subvariant of Omicron rises, lab studies point to signs of severity', 'des1', 'panuwat', '2022/02/02'),
@@ -17,10 +24,17 @@ const newsList = [
     new News(0005, 'https://static01.nyt.com/images/2022/03/01/us/01virus-briefing-cdc-contact-tracing1/merlin_172696629_a1ec7ad9-86bd-4813-942a-ff78805fb307-superJumbo.jpg?quality=75&auto=webp', 'Covid News: C.D.C. Drops Contact Tracing Recommendation', 'des1', 'panuwat', '2022/02/02'),
 ]
 
+const productList = [
+    new product('pd001', '../assets/images/nDroCare.png', 'antivirus product', 'N-Dro Care', 'N-Dro Care Description', 120, true),
+    new product('pd001', '../assets/images/nDroClean.png', 'antivirus product', 'N-Dro Care', 'N-Dro Care Description', 120, false),
+    new product('pd001', '../assets/images/nDroCare.png', 'antivirus product', 'N-Dro Care', 'N-Dro Care Description', 120, false),
+    new product('pd001', '../assets/images/nDroCare.png', 'antivirus product', 'N-Dro Care', 'N-Dro Care Description', 120, false),
+    new product('pd001', '../assets/images/nDroCare.png', 'antivirus product', 'N-Dro Care', 'N-Dro Care Description', 120, true)
+]
+
 
 function loadNews() {
     let newItems = document.getElementById('newsItems');
-    console.log(newItems)
     newsList.forEach(element => {
         let diveItem = document.createElement('div');
         diveItem.className = 'newsItem'
@@ -40,5 +54,31 @@ function loadNews() {
         diveItem.appendChild(img)
         diveItem.appendChild(infoItem)
         newItems.appendChild(diveItem)
+    });
+}
+
+function loadProduct() {
+    let productBlog = document.getElementById('products');
+    productList.forEach(element => {
+        let productItem = document.createElement('div');
+        productItem.className = 'productItem';
+        let productItemImg = document.createElement('img');
+        productItemImg.src = `${element.img}`;
+        let productItemName = document.createElement('div');
+        productItemName.className = 'productItemName'
+        productItemName.innerHTML = element.name
+        let productItemDes = document.createElement('div');
+        productItemDes.className = 'productItemDes'
+        productItemDes.innerHTML = element.des
+        if(element.bestSeller) {
+            let bestSeller = document.createElement('div');
+            bestSeller.className = 'bestSeller'
+            bestSeller.innerHTML = 'สินค้าขายดี'
+            productItem.appendChild(bestSeller)
+        }
+        productItem.appendChild(productItemImg);
+        productItem.appendChild(productItemName);
+        productItem.appendChild(productItemDes);
+        productBlog.appendChild(productItem);
     });
 }

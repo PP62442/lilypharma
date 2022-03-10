@@ -5,3 +5,50 @@
 .cover {
     background-image: url("../images/banner.jpg");
 }
+
+.product-blog {
+    height: 100vh;
+}
+
+.cover-product {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.rigth {}
+
+.rigth img {
+    height: 70vh;
+    object-fit: cover;
+}
+
+#products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.productItem {
+    position: relative;
+}
+
+#products .productItem img {
+    height: 50vh;
+    transition: 0.3s all ease-in-out;
+    object-fit: cover;
+}
+
+#products .productItem img:hover {
+    transform: scale(1.1);
+    transition: 0.3s all ease-in-out;
+}
+
+.bestSeller {
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    background-color: var(--color-primary);
+    color: white;
+    padding: 0.5rem 2rem;
+}
