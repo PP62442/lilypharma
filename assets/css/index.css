@@ -417,9 +417,15 @@ body {
     }
 
     .product-item .body {
-        /* display: flex;
-        justify-content: center;
+        /* height: 100%;
+        display: flex; */
+        /* justify-content: center;
         align-items: center; */
+    }
+
+    .btn-go-to-shop {
+        padding: 0.5rem 1rem;
+        font-weight: normal;
     }
 
     .btn-arrow {
