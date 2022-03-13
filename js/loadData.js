@@ -9,7 +9,7 @@ class News {
     }
 }
 
-class product {
+class Product {
     constructor(id, img, type, name, des, price, bestSeller) {
         this.id = id,
             this.img = img, this.type = type, this.name = name, this.des = des, this.price = price, this.bestSeller = bestSeller
@@ -25,11 +25,11 @@ const newsList = [
 ]
 
 const productList = [
-    new product('pd001', '../assets/images/nDroCare.png', 'antivirus product', 'N-Dro Care', 'N-Dro Care Description', 120, true),
-    new product('pd001', '../assets/images/nDroClean.png', 'antivirus product', 'N-Dro Care', 'N-Dro Care Description', 120, false),
-    new product('pd001', '../assets/images/nDroCare.png', 'antivirus product', 'N-Dro Care', 'N-Dro Care Description', 120, false),
-    new product('pd001', '../assets/images/nDroCare.png', 'antivirus product', 'N-Dro Care', 'N-Dro Care Description', 120, false),
-    new product('pd001', '../assets/images/nDroCare.png', 'antivirus product', 'N-Dro Care', 'N-Dro Care Description', 120, true)
+    new Product('pd001', '../assets/images/nDroCare.png', 'antivirus product', 'N-Dro Care', 'N-Dro Care Description', 120, true),
+    new Product('pd002', '../assets/images/nDroClean.png', 'antivirus product', 'N-Dro Clean', 'N-Dro Care Description', 120, false),
+    new Product('pd003', '../assets/images/nDroCare.png', 'antivirus product', 'N-Dro Care', 'N-Dro Care Description', 120, true),
+    new Product('pd004', '../assets/images/nDroCare.png', 'antivirus product', 'N-Dro Care', 'N-Dro Care Description', 120, false),
+    new Product('pd0015', '../assets/images/nDroCare.png', 'antivirus product', 'N-Dro Care', 'N-Dro Care Description', 120, true)
 ]
 
 
