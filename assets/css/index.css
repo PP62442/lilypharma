@@ -406,21 +406,34 @@ body {
     font-size: 3rem;
 }
 
-@media only screen and (max-width: 1024px) {}
-
-@media only screen and (max-width: 768px) {}
-
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1024px) {
+    .news {
+        background-color: white;
+        min-height: 0;
+    }
 
     .product-item .header {
         font-size: 1rem;
     }
 
     .product-item .body {
-        /* height: 100%;
-        display: flex; */
-        /* justify-content: center;
-        align-items: center; */
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+
+    .product-item .body div {
+        display: block;
+    }
+
+    .product-item .body div img {
+        width: 50rem;
+    }
+
+    .product-item .body div div:nth-child(1),
+    .product-item .body div div:nth-child(2) {
+        display: flex;
+        justify-content: center;
     }
 
     .btn-go-to-shop {
@@ -434,6 +447,169 @@ body {
 
     .product-item {
         height: 100%;
+    }
+
+    .product-items {
+        padding: 1rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .product-item .header {
+        font-size: 1rem;
+    }
+
+    .product-item .body {
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+
+    .product-item .body div {
+        display: block;
+    }
+
+    .product-item .body div img {
+        width: 15rem;
+    }
+
+    .product-item .body div div:nth-child(1),
+    .product-item .body div div:nth-child(2) {
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn-go-to-shop {
+        padding: 0.5rem 1rem;
+        font-weight: normal;
+    }
+
+    .btn-arrow {
+        display: none;
+    }
+
+    .product-item {
+        height: 80%;
+    }
+
+    .section-pre-product {
+        /* display: none; */
+    }
+
+    .post-by-left {
+        margin-top: 1rem;
+    }
+
+    .news_column {
+        /* grid-template-columns: 1fr; */
+        display: block;
+    }
+
+    .fotter-website {
+        /* display: none; */
+    }
+
+    .news_column .rigth {
+        padding: 1rem 1rem 1rem 1rem;
+
+    }
+
+    .newsItem {
+        display: block;
+    }
+
+    .img-news-rigth {
+        width: 100%;
+        height: 50%;
+        object-fit: cover;
+    }
+
+    .newsItem .itemInfo {
+        position: static;
+        margin-top: 1rem;
+        padding: 0;
+    }
+
+    .newsItem .itemInfo .btn-read-more {
+        position: static;
+    }
+
+    .footer-grid {
+        display: block;
+    }
+
+    .footer-grid .information .logo,
+    .footer-grid .contact .topic {
+        font-size: 1.25rem;
+    }
+
+    .footer-grid .location,
+    .contact .des {
+        font-size: 0.8rem;
+        margin-top: 1rem;
+    }
+
+    .footer-grid .contact {
+        margin-top: 1rem;
+    }
+
+    .social {
+        margin-top: 1rem;
+        place-items: center;
+    }
+
+    .rigth header div:nth-child(2) {
+        font-size: 0.8rem;
+        place-items: end;
+        display: flex;
+        align-items: end;
+    }
+
+    .rigth header div:nth-child(1) {
+        display: flex;
+        align-items: end;
+    }
+
+}
+
+
+@media only screen and (max-width: 480px) {
+
+    .product-item .header {
+        font-size: 1rem;
+    }
+
+    .product-item .body {
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+
+    .product-item .body div {
+        display: block;
+    }
+
+    .product-item .body div img {
+        width: 100%;
+    }
+
+    .product-item .body div div:nth-child(1),
+    .product-item .body div div:nth-child(2) {
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn-go-to-shop {
+        padding: 0.5rem 1rem;
+        font-weight: normal;
+    }
+
+    .btn-arrow {
+        display: none;
+    }
+
+    .product-item {
+        height: 80%;
     }
 
     .section-pre-product {
@@ -517,5 +693,13 @@ body {
 @media only screen and (max-width: 320px) {
     .news_column {
         grid-template-columns: 1fr;
+    }
+
+    .product-item .body div img {
+        width: 8rem;
+    }
+
+    .product-item {
+        height: 95%;
     }
 }
