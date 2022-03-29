@@ -25,11 +25,11 @@ const newsList = [
 ]
 
 const productList = [
-    new Product('pd001', '../assets/images/nDroCare.png', 'antivirus product', 'N-Dro Care', 'N-Dro Care Description', 120, true),
-    new Product('pd002', '../assets/images/nDroClean.png', 'antivirus product', 'N-Dro Clean', 'N-Dro Care Description', 120, false),
-    new Product('pd003', '../assets/images/nDroCare.png', 'antivirus product', 'N-Dro Care', 'N-Dro Care Description', 120, true),
-    new Product('pd004', '../assets/images/nDroCare.png', 'antivirus product', 'N-Dro Care', 'N-Dro Care Description', 120, false),
-    new Product('pd0015', '../assets/images/nDroCare.png', 'antivirus product', 'N-Dro Care', 'N-Dro Care Description', 120, true)
+    new Product('pd001', './assets/images/nDroCare.png', 'antivirus product', 'N-Dro Care', 'N-Dro Care Description', 120, true),
+    new Product('pd002', './assets/images/nDroClean.png', 'antivirus product', 'N-Dro Clean', 'N-Dro Care Description', 120, false),
+    new Product('pd003', './assets/images/nDroCare.png', 'antivirus product', 'N-Dro Care', 'N-Dro Care Description', 120, true),
+    new Product('pd004', './assets/images/nDroCare.png', 'antivirus product', 'N-Dro Care', 'N-Dro Care Description', 120, false),
+    new Product('pd0015', './assets/images/nDroCare.png', 'antivirus product', 'N-Dro Care', 'N-Dro Care Description', 120, true)
 ]
 
 
