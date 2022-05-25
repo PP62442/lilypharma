@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta author="PpWizard">
+    <title>Register</title>
+    <style>
+        body {
+            background-color: cadetblue;
+        }
+    </style>
+    <script type="text/javascript" src="index.js"></script>
+</head>
+
+<body bgcolor='LightYellow'>
+    <h1 align="center">แบบฟอร์มลงทะเบียน</h1>
+    <form align="center" action="result.html" method="GET">
+        <div>
+            <label for="name">ชื่อจริง*</label>
+            <input type="text" id="name" placeholder="ป้อนชื่อของคุณ (ภาษาไทย)" required>
+        </div>
+        <div>
+            <label for="surname">นามสกุล</label>
+            <input type="text" id="surname" placeholder="ป้อนนามสกุล (ภาษาไทย)">
+        </div>
+        <div>
+            <label for="email">อีเมล*</label>
+            <input type="email" id="email" required>
+        </div>
+        <div>
+            <label for="password">รหัสผ่าน</label>
+            <input type="password" id="password">
+        </div>
+        <div>
+            <label for="">ที่อยู่</label>
+            <textarea name="" cols="30" rows="5">Your address...</textarea>
+        </div>
+        <div>
+            <label for="age">อายุ</label>
+            <input type="number" id="age" min="0" max="100" value="18">
+        </div>
+        <div>
+            <label for="birthdate">วันเกิด</label>
+            <input type="date" id="birthdate">
+        </div>
+        <div>
+            <label for="telephone">เบอร์โทรศัพท์*</label>
+            <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="tel"
+            placeholder="08x-xxx-xxxx (ใส่ขีด)" required>
+        </div>
+        <div>
+            <label for="favColor">สีที่ชอบ</label>
+            <input type="color" id="color">
+        </div>
+        <div>
+            <label for="lastname">ช่วงตัวเลข</label>
+            <input type="range" id="rangenumber" value="50">
+        </div>
+        <div>
+            <label for="education">ระดับการศึกษา</label>
+            <select name="edu" id="">
+                <option value="มัธยมศึกษา">มัธยมศึกษา</option>
+                <option value="ปริญญาตรี" selected>ปริญญาตรี</option>
+                <option value="ปริญญาโท">ปริญญาโท</option>
+            </select>
+        </div>
+        <div>
+            <label for="gender">เพศ</label>
+            <input type="radio" name="gender">เพศชาย
+            <input type="radio" name="gender">เพศหญิง
+            <input type="radio" name="gender">กำหนดเอง
+        </div>
+        <div>
+            <label for="hobbies">สิ่งที่ชอบ</label>
+            <input type="checkbox" name="fav">เขียนเว็บ
+            <input type="checkbox" name="fav">สร้างเกม
+            <input type="checkbox" name="fav">ซ่อมคอม
+            <input type="checkbox" name="fav">เล่นเกม
+            <input type="checkbox" name="fav">อื่นๆ
+        </div>
+        <div>
+            <label for="file">แนบเอกสาร</label>
+            <input type="file">
+        </div>
+        <div>
+            <label for="website">เว็บไซต์</label>
+            <input type="url">
+        </div>
+        <div>
+            <input type="submit" onclick="handleSubmit()" />
+            <button type="reset">ล้างข้อมูล</button>
+        </div>
+    </form>
+</body>
+
+</html>

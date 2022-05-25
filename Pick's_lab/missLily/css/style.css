@@ -1,0 +1,340 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    background: rgb(33, 119, 102);
+    color: white;
+    padding: 0;
+}
+
+.menu ul {
+    list-style: none;
+    background-color: white;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    font-size: 1.2em;
+    line-height: 40px;
+    text-align: left;
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: block;
+    padding-left: 15px;
+    border-bottom: 1px solid rgb(106, 254, 209);
+    transition: 1s;
+}
+
+.menu a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(23, 142, 142);
+}
+
+.menu li li {
+    font-size: .8em;
+}
+
+@media screen and (min-width: 650px) {
+    .menu li {
+        width: 200px;
+        border-bottom: none;
+        height: 40px;
+        font-size: 1.4em;
+        display: inline-block;
+        margin-right: -4px;
+    }
+
+    .menu a {
+        border-bottom: none;
+    }
+
+    .menu>ul>li {
+        text-align: center;
+    }
+
+    .menu>ul>li>a {
+        padding-left: 0;
+    }
+
+    .menu li ul {
+        position: absolute;
+        display: none;
+        width: inherit;
+    }
+
+    .menu li:hover ul {
+        display: block;
+    }
+
+    .menu li ul li {
+        display: block;
+    }
+}
+
+.health h1 {
+    margin-top: 2.5rem;
+}
+
+.artical-container {
+    display: inline-block;
+    align-items: left;
+    white-space: nowrap;
+    width: 100%;
+    margin-left: 0rem;
+    height: 50%;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.artical {
+    display: inline-block;
+    width: 15rem;
+    height: 15rem;
+    box-shadow: 0 0 30px rgb(132, 132, 132);
+    backdrop-filter: blur(1px);
+    padding: 0;
+    vertical-align: top;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    transition: 0.3s all ease-in-out;
+}
+
+.artical:hover {
+    transition: 0.3s all ease-in-out;
+    transform: scale(1.05);
+}
+
+.artical .text {
+    font-size: 1.4rem;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    bottom: 0;
+    color: azure;
+    background-color: black;
+
+    display: inline-block;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 3em;
+    line-height: 1.5em;
+}
+
+.artical .body div {
+    display: block;
+}
+
+.artical .body div img {
+    position: absolute;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.menubar {
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    box-shadow: 0 0 10px #666;
+}
+
+.menubar .logo {
+    float: left;
+}
+
+.menubar h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: normal;
+    padding: 10px;
+}
+
+.menubar ul.menu {
+    list-style: none;
+    float: right;
+}
+
+.menubar ul.menu li {
+    float: left;
+    margin-right: 20px;
+}
+
+.menubar ul.menu li a {
+    text-decoration: none;
+    color: #333;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.menubar ul.menu li a:hover {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0;
+}
+
+.header {
+    background: #666 url(../img/bg.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+}
+
+.header_area {
+    padding-top: 150px;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto;
+    width: 660px;
+}
+
+.header_area h1 {
+    margin: 0;
+    font-size: 60px;
+    font-weight: normal;
+}
+
+.header_area p {
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 480px;
+    font-size: 16px;
+}
+
+
+.info1 {
+    width: 100%;
+    height: 400px;
+}
+
+.info1_area {
+    color: #333;
+}
+
+.info1_area img {
+    margin-top: 80px;
+    float: left;
+}
+
+.info1_text {
+    text-align: center;
+    width: 460px;
+    float: left;
+    margin-left: 70px;
+    margin-top: 140px;
+}
+
+.info1_area h1 {
+    margin: 0;
+    font-weight: normal;
+}
+
+.info2 {
+    width: 100%;
+    height: 350px;
+    background: #333;
+}
+
+.info2_area {
+    color: #333;
+}
+
+.info2_area img {
+    margin-top: 48px;
+    float: left;
+    margin-left: 40px;
+}
+
+.info2_text {
+    text-align: center;
+    width: 460px;
+    float: left;
+    margin-left: 70px;
+    margin-top: 140px;
+    color: #fff;
+}
+
+.info2_area h1 {
+    margin: 0;
+    font-weight: normal;
+}
+
+.contact {
+    width: 100%;
+    height: 515px;
+}
+
+.contact_area h1 {
+    font-weight: normal;
+}
+
+.contact_area input {
+    margin: 10px 0;
+    border: 2px solid #333;
+    width: 350px;
+    padding: 10px;
+}
+
+.contact_area textarea {
+    margin: 10px 0;
+    border: 2px solid #333;
+    width: 350px;
+    padding: 10px;
+}
+
+.contact_area button {
+    padding: 10px;
+    width: 90px;
+    background: #333;
+    color: #fff;
+    border: 2px solid transparent;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.contact_area button:hover {
+    background: #fff;
+    color: #333;
+    border: 2px solid #333;
+}
+
+footer {
+    background: #333;
+    margin-top: 60px;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+} */
